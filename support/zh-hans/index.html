@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>CrossQuill 支持</title>
+<style>body{font:17px/1.6 -apple-system,system-ui,sans-serif;max-width:46rem;margin:2rem auto;padding:0 1.2rem;color:#1d1d1f;background:#fff}h1{font-size:1.7rem}h2{font-size:1.2rem;margin-top:2rem}table{border-collapse:collapse;width:100%}td,th{border:1px solid #d2d2d7;padding:.5rem;vertical-align:top;text-align:left}code{font-size:.92em}nav{font-size:.95rem;margin-bottom:1.5rem}a{color:#06c}@media(prefers-color-scheme:dark){body{color:#f5f5f7;background:#1d1d1f}td,th{border-color:#424245}a{color:#2997ff}}</style>
+</head>
+<body>
+<nav><a href="../../support/">English</a> · <a href="../../privacy/zh-hans/">隐私政策</a></nav>
+<h1>CrossQuill 支持</h1>
+<p><em>本页另有英文版；中英文不一致时，以英文版为准。</em></p>
+<p>联系：<a href="mailto:crossquillsupport.datebook278@passinbox.com">crossquillsupport.datebook278@passinbox.com</a>（请勿发送 API 密钥、恢复码或敏感聊天内容）　隐私政策：<a href="https://jingjc.github.io/crossquill-support/privacy/zh-hans/">https://jingjc.github.io/crossquill-support/privacy/zh-hans/</a></p>
+<p><strong>我需要准备什么？</strong> 您需要至少一家模型服务商的 API 密钥。本应用不提供模型服务，也不代售额度。当前版本提供的服务：OpenRouter、DeepSeek、Kimi、OpenAI、Anthropic。本应用是独立应用，与这些服务商没有隶属关系，也未获其背书或赞助。</p>
+<p><strong>如何获取各家 API 密钥？</strong> 登录对应服务商的开发者控制台，创建 API 密钥后，在应用中打开“设置 → 接口密钥 → 添加服务”（iPhone：“设置 → 模型与服务 → 接口密钥”）粘贴保存。OpenRouter 的余额查询需要另一把“管理密钥”，在 OpenRouter 的管理密钥设置页创建（<a href="https://openrouter.ai/settings/management-keys">https://openrouter.ai/settings/management-keys</a> ，该地址已在应用中使用）。“保存密钥”只保存在本机、不联网；“保存并获取模型”会额外读取该服务的官方模型目录，不发送聊天。</p>
+<p><strong>费用由谁收取？</strong> 应用本身为 App Store 一次购买，Mac 与 iPhone 通用。模型调用、联网搜索和工具调用的费用由您选择的服务商按您的账户计费，我们不经手、不加价。应用内“用量总览”只统计服务商回执中的数值，不是账单；费用缺失不代表免费。停止请求只关闭本机连接，服务商已处理的部分仍可能计费。</p>
+<p><strong>为什么发送前要确认？</strong> 每次发送都会把内容交给第三方服务商，并可能产生费用。确认页会列出接收方、模型、上下文轮数、附件、联网设置和请求次数，只有点击确认后应用才解密密钥并联网（Kimi 站点识别除外，见隐私政策）。该确认默认开启，可在“设置 → 通用”（iPhone：“设置 → 聊天偏好”）关闭；关闭后点击发送即提交。应用不会自动重试，也不会悄悄换模型。</p>
+<p><strong>为什么第一次使用某个服务时要先同意？</strong> 每个服务商第一次收到您的内容前，应用会说明接收方、将发送的内容和该服务商的隐私政策，并请您同意一次。这与“发送前确认”无关，关闭逐次确认也不会跳过。同意只保存在本设备，可在设置中逐项撤回。只读取模型目录、查询余额或识别 Kimi 站点时只发送密钥，不需要此同意。</p>
+<p><strong>为什么 Kimi 要先识别站点？</strong> Kimi 开放平台有国际站和中国站，密钥互不通用，您只需粘贴密钥。每次启动或更换密钥后第一次使用 Kimi 前，应用会用该密钥先查询国际站的模型目录，国际站拒绝时再查询中国站（只发送密钥，不含聊天内容）；识别后只连接该站点，失败也不会改发另一站点。两个站点适用不同的隐私政策，见下方链接。Kimi 远端文件只能在上传站点删除。</p>
+<p><strong>我的数据存在哪里？开发者能看到吗？</strong> 聊天、密钥和记录加密保存在您的设备上。我们没有服务器，看不到您的任何内容。只有您确认发送的内容会到达您选择的服务商，由其按自己的政策处理（链接见下方）。</p>
+<p><strong>如何在 Mac 与 iPhone 之间同步？</strong> 两端安装兼容版本并开启 iCloud 云盘，在“iCloud 同步”中点击“连接同步文件夹…”，在第一台设备上选择 iCloud 云盘中的位置并“建立同步”，等待文件传到另一台设备后，在另一台设备选择同一位置。注意：同步文件是普通 JSON，未经本应用加密，由 iCloud 保护；密钥、附件原件和本地目录授权不会同步，需要在每台设备分别设置。</p>
+<p><strong>更换设备或忘记锁定码怎么办？</strong></p>
+<ul>
+<li><strong>iPhone：</strong> 请提前在“解锁与恢复”中生成并保管恢复码。忘记锁定码时，可用恢复码设置新锁定码并保留原数据；启用的面容 ID／触控 ID 也可以解锁。两者都没有时，加密数据无法恢复，我们也无法帮您找回。</li>
+<li><strong>Mac：</strong> 主密钥由系统钥匙串保管，无需应用密码。更换电脑时，已同步的聊天可通过 iCloud 同步取回；本机数据库不随同步；接口密钥和目录授权需在新 Mac 上重新设置。</li>
+</ul>
+<p><strong>如何删除我的数据？</strong></p>
+<ul>
+<li>删除会话或清空全部本机历史：“历史管理”；删除多模型分析：分析历史。</li>
+<li>删除密钥：“接口密钥”中逐个删除。</li>
+<li>同步文件夹中的副本：在“文件”App 或访达中删除该文件夹。</li>
+<li>已发送给服务商的数据：请在该服务商的控制台管理或直接联系该服务商。</li>
+<li>删除应用会移除应用数据；系统钥匙串条目是否保留取决于系统。</li>
+</ul>
+<p><strong>OpenRouter 提示找不到运行渠道？</strong> 默认“不保存对话”只使用零数据保留且不收集数据的渠道，部分模型可能无法使用。您可以更换模型、在当次运行改选较宽松的隐私档，或检查 OpenRouter 账户隐私设置。</p>
+<p><strong>为什么某些 Anthropic 型号标注“要求 30 天数据保留”？</strong> 这是 Anthropic 对部分型号的规定。若您的组织启用了零数据保留，需按 Anthropic 说明为工作区开启 30 天保留后才能使用这些型号。</p>
+<p><strong>服务商隐私政策：</strong> 见隐私政策第 16 节。</p>
+<p><strong>报告问题：</strong> 发送邮件至 <a href="mailto:crossquillsupport.datebook278@passinbox.com">crossquillsupport.datebook278@passinbox.com</a>，写明设备类型、系统版本、应用版本和问题现象；请勿附带密钥或敏感内容。</p>
+<p><strong>反馈或举报回答内容：</strong> 在该回答的菜单中选择“反馈或举报此回答”，应用会生成一封发往 <a href="mailto:crossquillsupport.datebook278@passinbox.com">crossquillsupport.datebook278@passinbox.com</a> 的邮件草稿。草稿默认不含回答原文，是否粘贴由您决定；邮件由您自己发送，应用不会自动发送任何内容。回答由您选择的服务商生成，本应用不改写也不拦截；与模型输出本身有关的问题，您也可以直接向该服务商反馈。</p>
+</body>
+</html>
