@@ -5,13 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="no-referrer">
 <title>CrossQuill</title>
-<style>body{font:17px/1.6 -apple-system,system-ui,sans-serif;max-width:46rem;margin:2rem auto;padding:0 1.2rem;color:#1d1d1f;background:#fff}h1{font-size:1.7rem}h2{font-size:1.2rem;margin-top:2rem}table{border-collapse:collapse;width:100%}td,th{border:1px solid #d2d2d7;padding:.5rem;vertical-align:top;text-align:left}code{font-size:.92em}nav{font-size:.95rem;margin-bottom:1.5rem}a{color:#06c}@media(prefers-color-scheme:dark){body{color:#f5f5f7;background:#1d1d1f}td,th{border-color:#424245}a{color:#2997ff}}</style>
+<style>:root{color-scheme:light dark;--page:#f6f6f8;--card:#fff;--line:#e2e3e8;--text:#1f2024;--muted:#62656d;--link:#0b63ce;--soft:#eff0f4}@media(prefers-color-scheme:dark){:root{--page:#151517;--card:#1e1e21;--line:#323237;--text:#ececef;--muted:#a1a3aa;--link:#6aa8ff;--soft:#27272b}}*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0;background:var(--page);color:var(--text);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}:lang(zh-Hans){line-height:1.8}a{color:var(--link);text-underline-offset:2px;overflow-wrap:anywhere}.top,main,footer{max-width:780px;margin:0 auto;padding-left:16px;padding-right:16px}.top{padding-top:20px;display:flex;align-items:center;justify-content:space-between;gap:8px 12px;flex-wrap:wrap}.brand{font-weight:700;font-size:1.05rem;letter-spacing:-.01em;color:var(--text);text-decoration:none}.top nav{display:flex;gap:4px;flex-wrap:wrap;font-size:.92rem}.top nav a{color:var(--muted);text-decoration:none;padding:3px 11px;border:1px solid transparent;border-radius:999px}.top nav a:hover{color:var(--text);background:var(--soft)}.top nav a[aria-current]{color:var(--text);background:var(--card);border-color:var(--line)}main{padding-top:20px;padding-bottom:40px}.home{padding-top:56px}.home h1{font-size:2.5rem;margin-top:0}h1{font-size:2rem;line-height:1.2;letter-spacing:-.02em;margin:20px 0 10px}p,ul,ol{margin:8px 0}ul{padding-left:1.3em}li{margin:4px 0}.meta{color:var(--muted);font-size:.92rem}.note{background:var(--soft);border-radius:12px;padding:10px 16px;margin-top:14px;font-size:.94rem}.note a[href^=mailto]{display:inline-block}article,.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:6px 28px 22px;margin-top:20px}article h2{font-size:1.15rem;line-height:1.4;margin:22px 0 8px;padding-top:22px;border-top:1px solid var(--line);scroll-margin-top:12px}article h2:first-child{border-top:0;padding-top:0}.toc{padding:18px 28px}.toc ul{list-style:none;padding:0;margin:0;columns:2;column-gap:28px;font-size:.95rem}.toc li{break-inside:avoid;margin:0;padding:3px 0}.toc a{text-decoration:none}.toc a:hover{text-decoration:underline}.scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.94rem;margin:8px 0}th,td{border-bottom:1px solid var(--line);padding:10px 14px 10px 0;vertical-align:top;text-align:left}th{color:var(--muted);font-weight:600;font-size:.85rem}tbody tr:last-child td{border-bottom:0}code{font:.9em ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--soft);border-radius:4px;padding:1px 4px;overflow-wrap:anywhere}.tag{font-size:1.15rem;color:var(--muted);margin:0 0 14px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-top:24px}.grid .card{margin:0;padding:22px 24px}.card h2{margin:0 0 6px;font-size:1.15rem;line-height:1.35}.card p{color:var(--muted);margin:0 0 4px}.go{display:inline-block;margin:12px 8px 0 0;padding:5px 14px;border:1px solid var(--line);border-radius:999px;text-decoration:none;font-size:.93rem;font-weight:600}.go:hover{background:var(--soft)}footer{padding-bottom:48px;color:var(--muted);font-size:.88rem}footer a{color:inherit}@media(max-width:560px){h1{font-size:1.6rem}.home{padding-top:36px}.home h1{font-size:2rem}article{padding:2px 18px 16px}.toc{padding:14px 18px}.toc ul{columns:1}.note{padding:10px 12px;font-size:.86rem}table{min-width:540px}}@media print{body{background:#fff}.top nav,footer{display:none}article,.card{border:0;padding:0}}</style>
 </head>
 <body>
+<main class="home">
 <h1>CrossQuill</h1>
-<ul>
-<li><a href="privacy/">Privacy Policy</a> · <a href="privacy/zh-hans/">隐私政策</a></li>
-<li><a href="support/">Support</a> · <a href="support/zh-hans/">支持</a></li>
-</ul>
+<p class="tag">Bring your own key AI client <span lang="zh-Hans">· 自带密钥，直连多家模型</span></p>
+<p>CrossQuill is an AI client for Mac and iPhone. You use your own API keys, and the App connects directly from your device to the model providers you choose.</p>
+<p lang="zh-Hans">CrossQuill 是 Mac 与 iPhone 上的 AI 客户端：使用您自己的 API 密钥，从您的设备直接连接您选择的模型服务商。</p>
+<div class="grid">
+<section class="card"><h2>Support <span lang="zh-Hans">/ 支持</span></h2>
+<p>Getting started, API keys, billing, sync, and how to reach us.</p>
+<p lang="zh-Hans">上手、接口密钥、费用、同步，以及如何联系我们。</p>
+<a class="go" href="support/">English</a><a class="go" href="support/zh-hans/" lang="zh-Hans">简体中文</a></section>
+<section class="card"><h2>Privacy Policy <span lang="zh-Hans">/ 隐私政策</span></h2>
+<p>What stays on your device, what is sent to the providers you choose, and what we never collect.</p>
+<p lang="zh-Hans">哪些内容留在设备上，哪些会发给您选择的服务商，以及我们从不收集什么。</p>
+<a class="go" href="privacy/">English</a><a class="go" href="privacy/zh-hans/" lang="zh-Hans">简体中文</a></section>
+</div>
+<p class="note">Contact <span lang="zh-Hans">/ 联系</span>: <a href="mailto:crossquillsupport.datebook278@passinbox.com">crossquillsupport.datebook278@passinbox.com</a></p>
+<p class="meta">Updated <span lang="zh-Hans">/ 更新</span>: 2026-11-14</p>
+</main>
 </body>
 </html>
