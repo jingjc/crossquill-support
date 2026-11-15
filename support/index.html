@@ -18,30 +18,34 @@
 <h2 id="s2">How do I get API keys?</h2>
 <p>Create a key in the provider's developer console, then open Settings → API keys → Add service (iPhone: Settings → Models and services → API keys) and paste it. OpenRouter balance checks need a separate management key from <a href="https://openrouter.ai/settings/management-keys">https://openrouter.ai/settings/management-keys</a> . "Save key" stays on device with no network; "Save and fetch models" also reads that provider's official model catalog without sending any chat.</p>
 <h2 id="s3">Who charges for usage?</h2>
-<p>The App is a one-time App Store purchase for Mac and iPhone. Model, web search and tool usage is billed by the provider you choose, on your account; we never handle or mark up those fees. Usage overview only totals values from provider receipts and is not a bill; a missing cost does not mean free. Stopping a request closes the local connection, but work the provider already did may still be billed.</p>
-<h2 id="s4">Why confirm before sending?</h2>
+<p>The App is free to download. The first 20 sends on each device are free; after that, sending needs Full Access, a one-time in-app purchase that covers both Mac and iPhone. Reading, search, export and settings always work. Model, web search and tool usage is billed by the provider you choose, on your account, separately from that purchase; we never handle or mark up those fees. Usage overview only totals values from provider receipts and is not a bill; a missing cost does not mean free. Stopping a request closes the local connection, but work the provider already did may still be billed.</p>
+<h2 id="s4">How do I restore my purchase on another device or after reinstalling?</h2>
+<p>Open Full Access and Purchase in Settings (iPhone: Settings → Data and security) and choose Restore Purchases, signed in with the Apple Account you bought with; you are not charged again. Free sends are counted per device.</p>
+<h2 id="s5">How do I move my conversations to a new Mac?</h2>
+<p>On Mac, the encryption key stays on that Mac and is not carried over by Migration Assistant or backups. Before you switch, turn on sync so your conversations go to the iCloud Drive folder you chose, then connect the same folder on the new Mac. If you already used Migration Assistant and the App says it cannot open the old data, choose Keep Old Data and Start Over: the old data stays in the App's data folder and nothing is deleted.</p>
+<h2 id="s6">Why confirm before sending?</h2>
 <p>Each send hands content to a third-party provider and may cost money. The confirmation sheet lists the recipient, model, context turns, attachments, web settings and request count; the App decrypts your key and connects only after you confirm (except for Kimi site identification; see the privacy policy). It is on by default and can be turned off in Settings → General (iPhone: Settings → Chat preferences). The App never retries automatically or switches models silently.</p>
-<h2 id="s5">Why do I agree once before using a service?</h2>
+<h2 id="s7">Why do I agree once before using a service?</h2>
 <p>Before a provider first receives your content, the App names the recipient, what will be sent and that provider's privacy policy, and asks for your consent once. This is separate from "Confirm before sending" and is not skipped when that is off. Consent stays on this device and can be withdrawn per provider in Settings. Reading model catalogs, checking balances or identifying the Kimi site sends only your key and needs no consent.</p>
-<h2 id="s6">Why does Kimi identify a site first?</h2>
+<h2 id="s8">Why does Kimi identify a site first?</h2>
 <p>The Kimi open platform has an international site and a China site with separate keys; you only paste your key. After each launch or key change, before first using Kimi, the App asks the international site's model catalog with that key and, only if it is rejected, the China site's (key only, no chat content). Afterwards it connects only to that site and never re-sends a failure to the other site. The two sites have different privacy policies (links below). Kimi remote files can be deleted only on the site they were uploaded to.</p>
-<h2 id="s7">Where is my data? Can the developer see it?</h2>
+<h2 id="s9">Where is my data? Can the developer see it?</h2>
 <p>Chats, keys and records are encrypted on your device. We have no server and cannot see any of your content. Only what you send reaches the provider you chose, under its own policy.</p>
-<h2 id="s8">How do I sync Mac and iPhone?</h2>
+<h2 id="s10">How do I sync Mac and iPhone?</h2>
 <p>Install compatible versions and turn on iCloud Drive. In iCloud sync, tap "Connect sync folder…", choose a location in iCloud Drive on the first device and select "Create sync", wait for files to reach the other device, then choose the same location there. Sync files are plain JSON, not encrypted by the App, and protected by iCloud; keys, attachment originals and local folder grants are not synced and must be set up on each device.</p>
-<h2 id="s9">New device or forgotten passcode?</h2>
+<h2 id="s11">New device or forgotten passcode?</h2>
 <p>On iPhone, create and keep a recovery code in Unlock and recovery; it lets you set a new passcode and keep your data, and enabled Face ID / Touch ID can also unlock. Without either, encrypted data cannot be recovered, and we cannot recover it for you. On Mac, the master key is held by the system keychain with no app password; synced chats can be retrieved through iCloud Sync on a new Mac, the local database does not sync, and API keys and folder access must be set up again on the new Mac.</p>
-<h2 id="s10">How do I delete my data?</h2>
+<h2 id="s12">How do I delete my data?</h2>
 <p>Delete conversations or clear all local history in Manage history; delete analyses in analysis history; delete keys one by one in API keys; delete the sync folder in Files or Finder; manage data already sent to a provider in that provider's console. Deleting the App removes its app data; whether keychain items remain depends on the system.</p>
-<h2 id="s11">OpenRouter says no route is available?</h2>
+<h2 id="s13">OpenRouter says no route is available?</h2>
 <p>The default "Do not store conversations" mode uses only zero-data-retention routes that disallow data collection, so some models may be unavailable. Change model, choose a less strict privacy mode for the run, or check your OpenRouter account privacy settings.</p>
-<h2 id="s12">Why do some Anthropic models say "Requires 30-day data retention"?</h2>
+<h2 id="s14">Why do some Anthropic models say "Requires 30-day data retention"?</h2>
 <p>Anthropic requires it for certain models. If your organization uses zero data retention, enable 30-day retention for a workspace as Anthropic describes before using them.</p>
-<h2 id="s13">Provider privacy policies</h2>
+<h2 id="s15">Provider privacy policies</h2>
 <p>see section 16 of the privacy policy.</p>
-<h2 id="s14">Report a problem</h2>
+<h2 id="s16">Report a problem</h2>
 <p>email <a href="mailto:crossquillsupport.datebook278@passinbox.com">crossquillsupport.datebook278@passinbox.com</a> with your device type, OS version, App version and what happened; do not include keys or sensitive content.</p>
-<h2 id="s15">Feedback on or reporting an answer</h2>
+<h2 id="s17">Feedback on or reporting an answer</h2>
 <p>choose the feedback/report item in that answer's menu. The App drafts an email to <a href="mailto:crossquillsupport.datebook278@passinbox.com">crossquillsupport.datebook278@passinbox.com</a>. The draft does not include the answer text by default; you decide whether to paste it, and you send the email yourself. The App never sends anything automatically. Answers are generated by the provider you chose, and the App does not rewrite or block them; for problems with the model's output itself you can also contact that provider.</p>
 </article>
 </main>
